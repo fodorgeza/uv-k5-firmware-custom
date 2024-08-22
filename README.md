@@ -26,7 +26,7 @@ Anyway, have fun.
 
 # Donations
 
-Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC206, Frédéric F4ESO, Stéphane F5LGW, Jorge Ornelas, Laurent F4AXK, Christophe Morel, Clayton W0LED, Pierre Antoine F6FWB, Jean-Claude 14FRS3306, Thierry F4GVO, Eric F1NOU, PricelessToolkit, Ady M6NYJ, Tom McGovern, Joseph Roth, Pierre-Yves Colin, Frank DJ7FG, Marcel Testaz, Brian Frobisher, Yannick F4JFO and Paolo Bussola for their [donations](https://www.paypal.com/paypalme/F4HWN). That’s so kind of them. Thanks so much 🙏🏻
+Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC206, Frédéric F4ESO, Stéphane F5LGW, Jorge Ornelas, Laurent F4AXK, Christophe Morel, Clayton W0LED, Pierre Antoine F6FWB, Jean-Claude 14FRS3306, Thierry F4GVO, Eric F1NOU, PricelessToolkit, Ady M6NYJ, Tom McGovern, Joseph Roth, Pierre-Yves Colin, Frank DJ7FG, Marcel Testaz, Brian Frobisher, Yannick F4JFO, Paolo Bussola, Dirk DL8DF and Szőke Levente for their [donations](https://www.paypal.com/paypalme/F4HWN). That’s so kind of them. Thanks so much 🙏🏻
 
 ## Table of Contents
 
@@ -64,10 +64,12 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
     * CTCSS or DCS value,
     * KeyLock message,
     * last RX,
-    * move BatTxt  menu from 34/63 to 30/63 (just after BatSave menu 29/63),
+    * move BatTxt menu from 34/63 to 30/63 (just after BatSave menu 29/63),
     * rename BackLt to BLTime,
     * rename BltTRX to BLTxRx,
     * improve memory channel input,
+    * add percent and gauge to Air Copy,
+    * improve audio bar,
     * and more...
 * new menu entries and changes:
     * add SetPwr menu to set User power (<20mW, 125mW, 250mW, 500mW, 1W, 2W or 5W),
@@ -79,13 +81,13 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
     * add SetMet menu to set s-meter style (Classic or Tiny),
     * add SetLck menu to set what is locked (Keys or Keys + PTT),
     * add SetGui menu to set font size on the VFO baseline (Classic or Tiny),
+    * add TXLock menu to open TX on channel,
+    * add SetTmr menu to set RX and TX timers (Off or On)
     * rename BatVol menu (52/63) to SysInf, which displays the firmware version in addition to the battery status,
     * improve PonMsg menu,
     * improve BackLt menu,
     * improve TxTOut menu,
-    * add PMR 446 F Lock band,
     * add HAM CA F Lock band (for Canadian zone),
-    * add GMRS/FRS/MURS F Lock (for North America zone),
     * remove blink and SOS functionality, 
     * remove AM Fix menu (AM Fix is ENABLED by default),
     * add support of 3500mAh battery,
@@ -116,7 +118,7 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
     * add the F + F1 or F + F2 key combination to dynamically change the Step,
     * add F + 8 to quickly switch backlight between BLMin and BLMax on demand (this bypass BackLt strategy),
     * add F + 9 to return to BackLt strategy,
-    * add long press on MENU, in * SCAN mode, to temporarily exclude a memory channel if (not working with * SCAN ALL),
+    * add long press on MENU, in * SCAN mode, to temporarily exclude a memory channel,
     * add short press on [0, 1, 2, 3, 4 or 5], in * SCAN mode, to dynamically change scan list.
 * many fix:
     * squelch, 
@@ -127,6 +129,7 @@ Special thanks to Jean-Cyrille F6IWW, Fabrice 14RC123, David F4BPP, Olivier 14RC
     * clean display on startup,
     * no more PWM noise,
     * and more...
+* enabled AIR COPY
 * disabled ENABLE_DTMF_CALLING,
 * disabled SCRAMBLER,
 * unlock TX on all bands needs only to be repeat 3 times,
